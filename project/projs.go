@@ -31,8 +31,8 @@ func Cards(env env.Connection) func(c *cli.Context) {
 			log.Fatalln(err)
 		}
 
-		for _, card := range cards {
-			log.Printf("ID: %v, Note: %v\n", card.GetID(), card.GetNote())
+		for _, cd := range cards {
+			log.Printf("ID: %v, Note: %v\n", cd.GetID(), cd.GetNote())
 		}
 	}
 }
